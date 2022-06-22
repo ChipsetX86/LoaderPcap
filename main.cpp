@@ -13,9 +13,9 @@ int main(int argc, char *argv[])
     }
 
     auto db = QSqlDatabase::addDatabase("QPSQL");
-    db.setDatabaseName("medical_base_volna"); //db_network
+    db.setDatabaseName("db_network");
     db.setUserName("postgres");
-    db.setPassword("2300"); //12345678
+    db.setPassword("12345678");
     db.setHostName("localhost");
     db.setPort(5432);
     if (!db.open()) {
